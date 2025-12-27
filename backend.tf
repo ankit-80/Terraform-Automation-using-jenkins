@@ -1,8 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "mybucket-1-ankit"
+    bucket = "hdfc-mobilebanking-prod-mum-01"
     key = "main"
     region = "us-east-1"
     dynamodb_table = "ankit-dynamodb"
   }
 }
+
