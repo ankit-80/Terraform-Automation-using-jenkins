@@ -54,7 +54,7 @@ resource "aws_security_group" "jenkins-sg-2022" {
     Name = var.security_group
   }
 }
-
+    
 resource "aws_instance" "myFirstInstance" {
   ami           = var.ami_id
   key_name = var.key_name
@@ -74,5 +74,6 @@ tags= {
   }
 }
 */
-*/
+
+
 
