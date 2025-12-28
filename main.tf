@@ -6,7 +6,7 @@ resource "aws_instance" "server" {
     ami                         = "ami-0ecb62995f68bb549"
     instance_type               = "t3.micro"
     key_name                    = "Key_pair_1"
-
+}
 
 /* provider "aws" {
   region = var.aws_region
@@ -71,6 +71,7 @@ tags= {
   }
 }
 */
+
 
 
 
