@@ -2,13 +2,10 @@ provider "aws" {
     region = "us-east-1"
 }
 
-resource "aws_vpc" "main" {
-  cidr_block = "172.16.0.0/16"
-  instance_tenancy = "default"
-  tags = {
-    Name = "main"
-  }
-}
+resource "aws_instance" "server" {
+    ami                         = "ami-0ecb62995f68bb549"
+    instance_type               = "t3.micro"
+    key_name                    = "Key_pair_1"
 
 
 /* provider "aws" {
@@ -74,6 +71,7 @@ tags= {
   }
 }
 */
+
 
 
 
