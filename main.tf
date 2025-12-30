@@ -1,4 +1,4 @@
-provider "aws" {
+/*provider "aws" {
     region = "us-east-1"
 }
 
@@ -7,8 +7,8 @@ resource "aws_instance" "server" {
     instance_type               = "t3.micro"
     key_name                    = "Key_pair_1"
 }
-
-/* provider "aws" {
+*/
+ provider "aws" {
   region = var.aws_region
 }
 
@@ -71,6 +71,7 @@ tags= {
   }
 }
 */
+
 
 
 
